@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Soft Pink Booth 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<header><span class="badge">✿ photobooth ✿</span>
+<h1>Soft Pink Booth</h1>
+<p class="sub">Foto dulu, hias stikernya setelahnya 🎀</p></header>
+
+<div class="card" id="booth">
+  <div class="row" id="modes"></div>
+  <div class="cam">
+    <video id="v" autoplay playsinline muted></video>
+    <div id="ph"></div>
+    <div class="tint" id="tint"></div>
+    <div id="cd"></div>
+    <div id="flash"></div>
+  </div>
+  <p class="note" id="prog"></p>
+  <div class="sec"><div class="lbl">🔢 Jumlah foto</div><div class="row" id="counts"></div></div>
+  <div class="sec" id="timerSec"><div class="lbl">⏱️ Timer kamera</div><div class="row" id="timers"></div></div>
+  <div class="sec"><div class="lbl">🧩 Layout</div><div class="row" id="layouts"></div></div>
+  <div class="sec"><div class="lbl">🎨 Filter</div><div class="row" id="filters"></div></div>
+  <div class="sec"><div class="lbl">🖼️ Warna frame</div><div class="row" id="frames"></div></div>
+  <input type="file" id="file" accept="image/*" multiple class="hide">
+  <div class="acts">
+    <button class="big" id="go">📸 Mulai</button>
+    <button class="big alt hide" id="stop">✖ Batal</button>
+  </div>
+  <p class="note hide" id="err"></p>
+</div>
+
+<div class="card hide" id="res">
+  <h2 style="margin:2px 0 4px;font-size:1.7rem">Hasilmu 💗</h2>
+  <p class="note" style="margin:0 0 10px">Pilih stiker, lalu ketuk foto untuk menempelkannya.</p>
+  <canvas id="c"></canvas>
+  <img id="out" class="hide" alt="Hasil photobooth">
+  <div class="sec"><div class="lbl">🎀 Stiker</div><div class="row" id="pal"></div></div>
+  <div class="sec"><div class="lbl">📏 Ukuran stiker</div><div class="row" id="sizes"></div></div>
+  <div class="row sec">
+    <button class="chip" id="undo">↩ Undo</button>
+    <button class="chip" id="clr">🧹 Hapus stiker</button>
+  </div>
+  <div class="sec"><div class="lbl">🎨 Filter</div><div class="row" id="rfilters"></div></div>
+  <div class="sec"><div class="lbl">🖼️ Warna frame</div><div class="row" id="rframes"></div></div>
+  <div class="acts">
+    <button class="big" id="dl">⬇ Download</button>
+    <button class="big alt" id="again">🔁 Ambil ulang</button>
+  </div>
+  <p class="note" id="dlnote"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
